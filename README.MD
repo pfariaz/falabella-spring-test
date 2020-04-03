@@ -27,10 +27,9 @@ If you want to filter by commune, yo can add `commune` RequestParam, for example
 
 `GET /api/v1/pharmacies?commune=RECOLETA`
 
-by defaultthe endpoint will response all pharmacies
+by default the endpoint will response all pharmacies
 
 If you want the response as XML or JSON, you will need to put the following HTTP header in the request:
-1.- For JSON response: `Accept: application/json` 
-2.- For XML response: `Accept: application/xml` 
+for JSON response: `Accept: application/json`and for XML response: `Accept: application/xml` 
 
 
