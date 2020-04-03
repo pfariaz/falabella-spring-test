@@ -14,7 +14,7 @@ docker build -t falabella-spring-test.
 
 2.- Then we can launch the image with the spring boot microservice
 ```bash
-docker run -p 8080:8080 -t springboot-test
+docker run -p 8080:8080 -t falabella-spring-test
 ```
 
 # Instructions to request
