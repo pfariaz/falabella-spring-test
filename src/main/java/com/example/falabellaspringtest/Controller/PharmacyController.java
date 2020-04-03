@@ -15,6 +15,7 @@ import java.util.List;
 import com.example.falabellaspringtest.Model.Pharmacy;
 import com.example.falabellaspringtest.Repository.PharmacyRepository;
 
+
 @RestController
 @RequestMapping("/api/v1/pharmacies")
 public class PharmacyController {
@@ -24,7 +25,13 @@ public class PharmacyController {
   @Autowired
 	private PharmacyRepository repository;
 
-
+  
+  
+  /** 
+   * Endpoint to get pharmacies filtered by commune. by default it will response with all pharmacies
+   * @param commune
+   * @return List<Pharmacy>
+   */
   @GetMapping(produces = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE})
   public List<Pharmacy> getAllPharmaciesByCommune(@RequestParam(required = false) String commune){
     logger.info("Getting all pharmacies by "+commune);
